@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在线音乐播放</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/base.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+
+</head>
+<body>
+
+    <!--网站头部-->
+    <header>
+        <!--网站标题-->
+        <h1>在线音乐播放器</h1>
+    </header>
+   <div class="body clearfix">
+     <!--网站中部-->
+       <div class="body-central">
+           <!--中部左边-->
+           <div class="left">
+               <!--图片-->
+               <!--图片-黑胶唱片-->
+             <i class="disc"> <img src="../images/disc.png" alt=""></i>
+               <!--图片-歌曲-->
+             <i class="song"> <img src="http://p2.music.126.net/mW53BkMgGy37I7yVrUg-aQ==/109951163117902077.jpg" alt=""></i>
+               <!--歌曲详情-->
+               <div class="detail">
+                    <div class="name">歌曲名称</div>
+                   <div class="album-singer">专辑名称-歌手名称</div>
+               </div>
+           </div>
+           <!--中部右边-->
+           <div class="right">
+               <!--歌词-->
+            <div class="lyrics"></div>
+           </div>
+       </div>
+       <div style="clear:both"></div>
+       <!--网站底部-->
+       <!--进度条-->
+       <div class="music-progress">
+           <!--时间-->
+           <div class="music-progress-top">
+               <!--当前进度-->
+               <span class="current-time">00:00</span>
+               <!--结束时间-->
+               <span class="time">5:29</span>
+           </div>
+           <!--进度线-->
+           <div class="music-progress-bar">
+               <div class="music-progress-line"></div>
+           </div>
+       </div>
+       <div class="body-bottom">
+           <!--上一首-->
+           <button class="Previous"><i class="iconfont icon-shangyishou"></i></button>
+           <!--开关按钮-->
+           <button class="Switch"><i class="iconfont icon-kaishi"></i></button>
+           <!--下一首-->
+           <button class="Next"><i class="iconfont icon-xiayishou"></i></button>
+           <!--<button class="Volume"><i class="iconfont icon-shengyin_shiti"></i></button>-->
+           <button class="List"><i class="iconfont icon-liebiao"></i></button>
+       </div>
+       <!--音乐列表-->
+       <div class="music-list">
+           <div class="box">
+               <div class="box-top">
+                   <div class="title">音乐列表</div>
+                   <div class="close"><span class="iconfont icon-cuocha_kuai"></span></div>
+               </div>
+               <div class="box-wrapper">
+                   <!--<ul>-->
+                   <!--    <li>-->
+                   <!--        <i>01 张杰-他不懂</i>-->
+                   <!--        <i class="iconfont icon-kaishi"></i>-->
+                   <!--    </li>-->
+                   <!--</ul>-->
+               </div>
+           </div>
+       </div>
+       <audio class="audio" src=""></audio>
+   </div>
+    <script src="../JS/main.js"></script>
+</body>
+</html>

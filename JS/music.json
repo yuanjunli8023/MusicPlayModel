@@ -1,0 +1,31 @@
+[
+    {
+        "name":"天下",
+        "audio_url":"http://music.163.com/song/media/outer/url?id=191254.mp3",
+        "album":"听，我们的歌-张杰",
+        "cover":"https://p1.music.126.net/ixIs5kkukgNYMmeDsc35_g==/29686813955450.jpg?param=300x300",
+        "time":"4:47"
+    },
+
+    {
+        "name":"他不懂",
+        "audio_url":"http://music.163.com/song/media/outer/url?id=28059417.mp3",
+        "album":"爱，不解释-张杰",
+        "cover":"http://p2.music.126.net/mW53BkMgGy37I7yVrUg-aQ==/109951163117902077.jpg?param=300x300",
+        "time":"3:52"
+    },
+    {
+        "name":"这就是爱",
+        "audio_url":"http://music.163.com/song/media/outer/url?id=191060.mp3",
+        "album":"这就是爱-张杰",
+        "cover":"http://p2.music.126.net/-IjIggUaU6QOg04LtWhjDA==/109951163940905361.jpg?param=300x300",
+        "time":"4:54"
+    },
+    {
+        "name":"明天过后",
+        "audio_url":"http://music.163.com/song/media/outer/url?id=191248.mp3",
+        "album":"明天过后-张杰",
+        "cover":"https://p1.music.126.net/ixIs5kkukgNYMmeDsc35_g==/29686813955450.jpg?param=300x300",
+        "time":"3:57"
+    }
+]

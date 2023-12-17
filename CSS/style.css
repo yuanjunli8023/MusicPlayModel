@@ -1,0 +1,204 @@
+body{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url("../images/default.jpeg");
+}
+header h1{
+    width: 100%;
+    height: 70px;
+    /*background-color: skyblue;*/
+    text-align: center;
+    line-height: 70px;
+}
+.body{
+    width: 80%;
+    margin: 0 auto;
+    /*background-color: skyblue;*/
+    color: rgb(217,217,214);
+
+}
+/*.body .body-top{*/
+/*    margin-left: 1px;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+/*.body .body-top li{*/
+/*    float: left;*/
+/*}*/
+/*.body .body-top a{*/
+/*    cursor: pointer;*/
+/*    opacity:.8;*/
+/*    margin: 5px 10px;*/
+/*    padding: 5px 10px ;*/
+/*    border: 1px solid rgb(190,190,190);*/
+/*    font-size: 16px;*/
+/*    color: rgb(217,217,214);*/
+/*}*/
+/*.body .body-top a:hover{*/
+/*    border-color: rgb(254,254,254);*/
+/*    color: rgb(254,254,254);*/
+/*}*/
+.body .body-central{
+    float: left;
+    width: 100%;
+}
+.body .body-central .left{
+    position: relative;
+    float: left;
+    padding-top: 170px;
+}
+.body .body-central .left .disc{
+    position: absolute;
+    top: 70px;
+    left: 470px;
+    z-index: 2;
+}
+.body .body-central .left .song{
+    position: absolute;
+    width: 160px;
+    height: 170px;
+    top: 110px;
+    left: 520px;
+    z-index: 1;
+    animation: zhuan 5s infinite linear;
+    animation-play-state: paused;
+}
+@keyframes zhuan {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.body .body-central .left .song img{
+    width: 100%;
+    height: 100%;
+}
+.body .body-central .left .detail{
+    position: absolute;
+    width: 320px;
+    height: 120px;
+    /*background-color: skyblue;*/
+    top: 380px;
+    left: 445px;
+    text-align: center;
+}
+.body .body-central .left .detail .name{
+    font-size: 14px;
+    font-weight: bold;
+}
+.body .body-central .left .detail .album-singer{
+    color:rgb(190,190,190) ;
+    line-height: 100px;
+}
+.body .body-central .right{
+    float: right;
+    padding-right: 30px;
+    width:60%;
+    height: 650px;
+    text-align: center;
+
+}
+.body .body-central .right .detail{
+    height: 20%;
+    border-bottom: 1px solid rgb(217,217,214);
+;
+}
+.body .music-progress{
+    width: 100%;
+    height: 20px;
+    /*margin: 0 auto;*/
+    /*background-color: skyblue;*/
+}
+.body .music-progress-top{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(190,190,190);
+    line-height: 20px;
+}
+.body .music-progress-bar{
+    width: 100%;
+    height: 3px;
+    background-color: #cccaca;
+    border-radius: 10px;
+    margin: 3px 0;
+}
+.body .music-progress-bar .music-progress-line{
+    width: 0%;
+    height: 100%;
+    background-color: #f2709b;
+}
+.body .body-bottom{
+    display: flex;
+    margin-top: 6px;
+    align-items: center;
+    justify-content: space-between;
+}
+.body .body-bottom audio{
+    width: 70%;
+    height: 40px;
+}
+.body .body-bottom button{
+    background-color: transparent;
+    vertical-align:top;
+    transition: all 0.4s;
+}
+.body .body-bottom i{
+    display:inline-block;
+    font-size: 35px;
+    width: 70px;
+    height: 40px;
+    color:  rgb(190,190,190);
+    line-height: 40px;
+    vertical-align:top;
+    border-radius:20px;
+}
+.body .body-bottom i:hover{
+    color: #ffffff;
+    border-radius: 12px;
+    background-color: rgba(241,243,244,.2);
+}
+.music-list{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.music-list .box{
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+}
+.music-list .box .box-top{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.music-list .box .box-top .close{
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+.music-list .box .box-wrapper{
+    width: 100%;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    list-style: none;
+}
+.music-list .box .box-wrapper ul li{
+    display: flex;
+    justify-content: space-between;
+
+}
+.playing{
+    color: skyblue;
+}

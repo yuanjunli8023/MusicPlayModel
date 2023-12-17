@@ -15,26 +15,7 @@ header h1{
     color: rgb(217,217,214);
 
 }
-/*.body .body-top{*/
-/*    margin-left: 1px;*/
-/*    margin-bottom: 20px;*/
-/*}*/
-/*.body .body-top li{*/
-/*    float: left;*/
-/*}*/
-/*.body .body-top a{*/
-/*    cursor: pointer;*/
-/*    opacity:.8;*/
-/*    margin: 5px 10px;*/
-/*    padding: 5px 10px ;*/
-/*    border: 1px solid rgb(190,190,190);*/
-/*    font-size: 16px;*/
-/*    color: rgb(217,217,214);*/
-/*}*/
-/*.body .body-top a:hover{*/
-/*    border-color: rgb(254,254,254);*/
-/*    color: rgb(254,254,254);*/
-/*}*/
+
 .body .body-central{
     float: left;
     width: 100%;

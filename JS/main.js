@@ -1,5 +1,3 @@
-// <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 // 保存音乐信息列表
     let musicList=[]
     // 声明变量，保存当前播放的是哪一首歌曲
@@ -7,13 +5,11 @@
     // 加载音乐列表信息
     $.ajax({
         type:"GET",
-        // url:"http://localhost:8080/api/songs",
-        url:"../JS/music.json",
+        url:"../JS/music.json",//这里使用的是本地路径，可以改成自己的接口
         dataType:"json",
         success:function (data){
-        // musicList = data1.data
-            musicList = data
-
+        musicList = data
+        //通过得到的数据对页面和列表进行渲染
         render(musicList[currentIndex])
         renderMusicList(musicList)
         },
@@ -140,7 +136,7 @@
             display:"none"
         })
     })
-    //根据音乐列表数据 创建列表
+    //根据音乐列表数据 创建列表 更改接口后记得更改属性名 ——> ${item.name}
     function renderMusicList(list){
         $(".box-wrapper").empty()
         $.each(list,function (index,item) {//遍历list 回调函数
@@ -155,7 +151,7 @@
             $(".box-wrapper").append($li)
         })
     }
-    // 根据信息，设置页面中对应标签中的内容
+    // 根据信息，设置页面中对应标签中的内容 更改接口后记得更改属性名
     function render(data){
     $(".name").text(data.name)
     $(".album-singer").text(data.album)
@@ -164,11 +160,3 @@
     $("audio").attr("src",data.audio_url)
 
 }
-// function render(data1){
-//     $(".name").text(data1.title)
-//     $(".album-singer").text(data1.album)
-//     $(".time").text(data1.time)
-//     $(".song img").attr("src",data1.pic)
-//     $("audio").attr("src",data1.url)
-//
-// }

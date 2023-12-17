@@ -71,6 +71,7 @@ body {
 .clearfix {
     *zoom: 1
 }
+/*这里使用的是阿里的图标库，需要更换图表的话需要自行更换  */
 @font-face {
     font-family: "iconfont"; /* Project id 4369000 */
     src: url('//at.alicdn.com/t/c/font_4369000_l6cvpynu2bk.woff2?t=1702368060041') format('woff2'),
